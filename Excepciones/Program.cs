@@ -29,4 +29,10 @@ catch (SinSolucionException e)
     Console.WriteLine(e.StackTrace);
 
 }
+catch (Exception e)
+{
+    Console.WriteLine($"error generico {e.Message}");
+    Console.WriteLine("ubicacion del error: ");
+    Console.WriteLine(e.StackTrace);
+}
 
